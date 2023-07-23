@@ -9,10 +9,6 @@ class TelaPrincipal():
         customtkinter.set_appearance_mode('dark')
         customtkinter.set_default_color_theme('dark-blue')
 
-        # Funcao LOGIN
-        def login():
-            print('Login efetuado')
-
         # componentes da tela inicial
         self.frame = customtkinter.CTkFrame(master=self.main)
         self.frame.pack(pady=20, padx=60, fill='both', expand=True)
@@ -26,11 +22,13 @@ class TelaPrincipal():
         self.caixa_senha = customtkinter.CTkEntry(master=self.frame, placeholder_text='Senha', show='*')
         self.caixa_senha.pack(pady=12, padx=10)
 
-        self.botao = customtkinter.CTkButton(master=self.frame, text='Login', command=login)
+        self.botao = customtkinter.CTkButton(master=self.frame, text='Login')
         self.botao.pack(pady=12, padx=10)
 
         self.checkbox = customtkinter.CTkCheckBox(master=self.frame, text='Lembrar-me')
         self.checkbox.pack(pady=12, padx=10)
+
+
 
 
 
